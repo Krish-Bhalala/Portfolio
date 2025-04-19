@@ -1,0 +1,90 @@
+.hexagon {
+  width: 100px;
+  height: 115px;
+  background: var(--light);
+  margin: 0 3px;
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.hexagon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.skill-name {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--dark);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.hexagon:hover {
+  background: var(--primary);
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.hexagon:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.hexagon:hover .skill-name {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .hexagon {
+    width: 90px;
+    height: 104px;
+  }
+  
+  .hexagon img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hexagon {
+    width: 80px;
+    height: 92px;
+  }
+  
+  .hexagon img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hexagon {
+    width: 70px;
+    height: 81px;
+    margin: 0 2px;
+  }
+  
+  .hexagon img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .skill-name {
+    font-size: 0.7rem;
+    bottom: -20px;
+  }
+}
