@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectsData = [
         {
             id: 1,
-<<<<<<< HEAD
             title: "Greed Game",
             subtitle: "Fun and retro style console game",
             description: "A classic console game, with varying game modes and difficulty level, with colorful UI. The goal is to eat as many numbers as possible (greedily) without dying.",
@@ -26,30 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     type: "image",
                     url: "./images/greed1.jpeg",
-=======
-            title: "AI-Powered Study Assistant",
-            subtitle: "Personalized learning platform",
-            description: "A web application that uses machine learning algorithms to create customized study plans based on individual learning patterns and track academic progress over time. The system adapts to the user's strengths and weaknesses, optimizing study sessions for maximum efficiency.",
-            features: [
-                "Generates personalized study schedules",
-                "Tracks progress with visual analytics",
-                "Adapts to learning patterns using ML",
-                "Provides study recommendations",
-                "Mobile-friendly interface"
-            ],
-            technologies: ["Python", "Flask", "TensorFlow", "JavaScript", "MongoDB"],
-            githubLink: "#",
-            demoLink: "#",
-            media: [
-                {
-                    type: "image",
-                    url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
->>>>>>> a51209ab97e91e7f0da13a17d46a572a59ba3017
                     alt: "Main dashboard view"
                 },
                 {
                     type: "image",
-<<<<<<< HEAD
                     url: "./images/greed2.jpeg",
                     alt: "Game Play view"
                 },
@@ -58,11 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     url: "./images/greed3.jpeg",
                     alt: "Invalid move view"
                 },
-=======
-                    url: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80",
-                    alt: "Mobile view"
-                }
->>>>>>> a51209ab97e91e7f0da13a17d46a572a59ba3017
             ]
         },
         {
@@ -140,8 +114,43 @@ document.addEventListener('DOMContentLoaded', function() {
                     alt: "Citations"
                 }
             ]
-        }
-        // Add more projects as needed
+        },
+        
+        //Next row
+        {
+            id: 4,
+            title: "Potato Clicker Game – Perry the Platypus Edition!",
+            subtitle: "A Fun Mini browser based clicker game",
+            description: "Another weird game on the internet, that is based on my favorite cartoon character Perry the Platypus from my childhood. The goal is to click on the potato as many times as possible and grow them, and build farms to buy upgrades.",
+            features: [
+                "Clicking on the big potato generates points",
+                "Marketplace where you can buy upgrades for points",
+                "Cheat code: console in the following keyword - counter.cheatCode() to get 5million points",
+                "Interactive UI with bgm and sound effects make sure to turn on the sound and increase device volume",
+                "Built in 12 hrs while following proper design patterns"
+            ],
+            technologies: ["HTML", "CSS", "Javascript", "Anime.js", "Github", "Git"],
+            githubLink: "https://krish-bhalala.github.io/Platypus-Potat-inator-Game/",
+            demoLink: "https://krish-bhalala.github.io/Platypus-Potat-inator-Game/",
+            media: [
+                {
+                    type: "image",
+                    url: "./images/clicker1.jpeg",
+                    alt: "Homepage"
+                },
+                {
+                    type: "image",
+                    url: "./images/clicker2.jpeg",
+                    alt: "Marketplace"
+                },
+                {
+                    type: "image",
+                    url: "./images/clicker3.jpeg",
+                    alt: "Footer"
+                }
+            ]
+        },
+        
     ];
 
     // Initialize projects grid
