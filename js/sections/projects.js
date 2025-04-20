@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "SEO friendly",
                 "Interactive and engaging UI with animations",
             ],
-            technologies: ["HTML", "CSS", "Javascript", "SCSS", "Github", "Git", "Figma", "AWS"],
+            technologies: ["HTML", "Sass", "Javascript", "Vue", "Github", "Git", "Figma", "AWS"],
             githubLink: "https://github.com/Krish-Bhalala/Active-Minds-Website",
             demoLink: "https://activeminds-umanitoba.org/",
             media: [
@@ -147,6 +147,56 @@ document.addEventListener('DOMContentLoaded', function() {
                     type: "image",
                     url: "./images/clicker3.jpeg",
                     alt: "Footer"
+                }
+            ]
+        },
+        {
+            id: 5,
+            title: "San Francisco’s Cycling Connections Analytics",
+            subtitle: "A Data Analytics project on San Francisco’s Cycling Connections",
+            description: "The project aims to analyze the cycling connections in San Francisco, providing insights into the cycling infrastructure and its usage.",
+            features: [
+                "Advance Graph theory analytics to analyze the cycling network",
+                "Report on the most popular cycling hubs",
+                "Detailed analysis on 20+ different metrics and parameters"
+            ],
+            technologies: ["R", "Jupyter Notebook", "Rmd" , "dplyr", "igraph", "ggplot2", "Github", "Git"],
+            githubLink: "https://github.com/Krish-Bhalala/San-Francisco-Urban-Mobility-Analytics",
+            demoLink: "https://krish-bhalala.github.io/San-Francisco-Urban-Mobility-Analytics/",
+            media: [
+                {
+                    type: "image",
+                    url: "./images/SF_Bike_Report.jpeg",
+                    alt: "Report"
+                }
+            ]
+        },
+        {
+            id: 6,
+            title: "Cooperative Threads Library",
+            subtitle: "A multithreading library for single core cooperative systems",
+            description: "The project aims to recreate the popular pthreads library in C that can fully support concurrency with and without mutexes.",
+            features: [
+                "Supports upto 1000 threads for a process",
+                "Enables premptive scheduling of threads",
+                "Mutexes support includled with the library",
+                "4 main scheduling policies: First in First Out, 2 threads, Round Robin, and Multi Level Feedback Queue",
+                "With good design patterns and proper documentation",
+                "NOTE: This project is published under a restrictive license, Hence live demo and source code will only be sent upon request.",
+            ],
+            technologies: ["C", "Make", "lldb" , "gdb", "atomics library", "valgring", "lima virtual machine", "Linux OS"],
+            githubLink: "#contact",
+            demoLink: "#contact",
+            media: [
+                {
+                    type: "image",
+                    url: "./images/thread1.jpeg",
+                    alt: "scheduling start"
+                },
+                {
+                    type: "image",
+                    url: "./images/thread2.jpeg",
+                    alt: "scheduling end"
                 }
             ]
         },
