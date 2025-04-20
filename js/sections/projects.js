@@ -19,22 +19,22 @@ document.addEventListener('DOMContentLoaded', function() {
             media: [
                 {
                     type: "image",
-                    url: "./images/greed4.jpeg",
+                    url: "./images/Greed4.jpeg",
                     alt: "Game over view"
                 },
                 {
                     type: "image",
-                    url: "./images/greed1.jpeg",
+                    url: "./images/Greed1.jpeg",
                     alt: "Main dashboard view"
                 },
                 {
                     type: "image",
-                    url: "./images/greed2.jpeg",
+                    url: "./images/Greed2.jpeg",
                     alt: "Game Play view"
                 },
                 {
                     type: "image",
-                    url: "./images/greed3.jpeg",
+                    url: "./images/Greed3.jpeg",
                     alt: "Invalid move view"
                 },
             ]
