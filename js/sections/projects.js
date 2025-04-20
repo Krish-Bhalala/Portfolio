@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectsData = [
         {
             id: 1,
+<<<<<<< HEAD
             title: "Greed Game",
             subtitle: "Fun and retro style console game",
             description: "A classic console game, with varying game modes and difficulty level, with colorful UI. The goal is to eat as many numbers as possible (greedily) without dying.",
@@ -25,10 +26,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     type: "image",
                     url: "./images/greed1.jpeg",
+=======
+            title: "AI-Powered Study Assistant",
+            subtitle: "Personalized learning platform",
+            description: "A web application that uses machine learning algorithms to create customized study plans based on individual learning patterns and track academic progress over time. The system adapts to the user's strengths and weaknesses, optimizing study sessions for maximum efficiency.",
+            features: [
+                "Generates personalized study schedules",
+                "Tracks progress with visual analytics",
+                "Adapts to learning patterns using ML",
+                "Provides study recommendations",
+                "Mobile-friendly interface"
+            ],
+            technologies: ["Python", "Flask", "TensorFlow", "JavaScript", "MongoDB"],
+            githubLink: "#",
+            demoLink: "#",
+            media: [
+                {
+                    type: "image",
+                    url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+>>>>>>> a51209ab97e91e7f0da13a17d46a572a59ba3017
                     alt: "Main dashboard view"
                 },
                 {
                     type: "image",
+<<<<<<< HEAD
                     url: "./images/greed2.jpeg",
                     alt: "Game Play view"
                 },
@@ -37,10 +58,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     url: "./images/greed3.jpeg",
                     alt: "Invalid move view"
                 },
+=======
+                    url: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80",
+                    alt: "Mobile view"
+                }
+>>>>>>> a51209ab97e91e7f0da13a17d46a572a59ba3017
             ]
         },
         {
             id: 2,
+<<<<<<< HEAD
             title: "UM Active Minds Official Website",
             subtitle: "Active Minds chapter at University of Manitoba's official website",
             description: "A one stop place to learn about mental health at university of manitoba, plus learn about exciting events and the amazing team behind it. The website is designed to be user-friendly and informative, providing resources and support for students.",
@@ -69,11 +96,32 @@ document.addEventListener('DOMContentLoaded', function() {
                     type: "image",
                     url: "./images/am3.jpeg",
                     alt: "Resources"
+=======
+            title: "Smart Campus Navigation",
+            subtitle: "Interactive university map",
+            description: "An interactive map application designed to help students and visitors navigate the university campus with real-time updates on building locations, events, and points of interest. Includes accessibility features for users with disabilities.",
+            features: [
+                "Real-time location tracking",
+                "Accessibility routes",
+                "Event notifications",
+                "Indoor navigation",
+                "User-friendly interface"
+            ],
+            technologies: ["JavaScript", "React", "Google Maps API", "Node.js", "Firebase"],
+            githubLink: "#",
+            demoLink: "#",
+            media: [
+                {
+                    type: "image",
+                    url: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    alt: "Campus map view"
+>>>>>>> a51209ab97e91e7f0da13a17d46a572a59ba3017
                 }
             ]
         },
         {
             id: 3,
+<<<<<<< HEAD
             title: "Hashtag Nasa",
             subtitle: "Solar Flare 2024 visualization - NASA Space App Challenge 2024",
             description: "A web application that visualizes solar flare data from NASA's API. Users can explore solar flare events, view detailed information, and view the 3D model.",
@@ -114,6 +162,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     alt: "Citations"
                 }
             ]
+=======
+            title: "E-Commerce Analytics Dashboard",
+            subtitle: "Data visualization tool",
+            description: "A comprehensive data visualization tool that provides business owners with insights into sales trends, customer behavior, and inventory management. Helps identify opportunities for growth and optimization.",
+            features: [
+                "Sales performance analytics",
+                "Customer segmentation",
+                "Inventory tracking",
+                "Real-time data updates",
+                "Custom report generation"
+            ],
+            technologies: ["Python", "Django", "Chart.js", "PostgreSQL", "AWS"],
+            githubLink: "#",
+            demoLink: "#"
+            // No media array - gallery won't be shown for this project
+>>>>>>> a51209ab97e91e7f0da13a17d46a572a59ba3017
         }
         // Add more projects as needed
     ];

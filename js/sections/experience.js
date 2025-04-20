@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         work: [
             {
                 id: 1,
+<<<<<<< HEAD
                 title: "Grader COMP3430 Operating Systems",
                 company: "University of Manitoba",
                 date: "May 2025 - July 2025",
@@ -13,10 +14,25 @@ document.addEventListener('DOMContentLoaded', function() {
                     "Assisting course faculty with assessing term tests"
                 ],
                 images: [
+=======
+                title: "Software Developer Intern",
+                company: "Tech Company Inc.",
+                date: "May 2023 - August 2023",
+                description: [
+                    "Developed and maintained web applications using React and Node.js",
+                    "Collaborated with team members to implement new features and fix bugs",
+                    "Optimized application performance, reducing load time by 30%",
+                    "Participated in code reviews and agile development processes"
+                ],
+                images: [
+                    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+>>>>>>> a51209ab97e91e7f0da13a17d46a572a59ba3017
                 ]
             },
             {
                 id: 2,
+<<<<<<< HEAD
                 title: "Comp Help Centre Leader 1",
                 company: "University of Manitoba",
                 date: "May 2025 - Aug 2025",
@@ -137,10 +153,41 @@ document.addEventListener('DOMContentLoaded', function() {
                     "Developed First Year Guide to empower new computer science students with essential rights, resources, and tips for navigating campus life"
                 ],
                 images: []
+=======
+                title: "Web Development Assistant",
+                company: "University IT Department",
+                date: "January 2023 - April 2023",
+                description: [
+                    "Redesigned department website improving user engagement by 40%",
+                    "Implemented responsive design for mobile compatibility",
+                    "Maintained and updated website content using CMS"
+                ],
+                images: [
+                    "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                ]
+            }
+        ],
+        leadership: [
+            {
+                id: 3,
+                title: "Computer Science Club President",
+                company: "University CS Club",
+                date: "September 2022 - Present",
+                description: [
+                    "Organize weekly meetings, workshops, and hackathons",
+                    "Manage a team of 10 officers and represent the club to faculty",
+                    "Increased club membership by 40% through outreach programs"
+                ],
+                images: [
+                    "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
+                    "https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                ]
+>>>>>>> a51209ab97e91e7f0da13a17d46a572a59ba3017
             }
         ],
         volunteer: [
             {
+<<<<<<< HEAD
                 id: 12,
                 title: "Highschool Workshop Facilitator",
                 company: "Let's Talk Science",
@@ -192,6 +239,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     "NOTE: currently not tutoring and limiting to mentoring only 1 individual"
                 ],
                 images: []
+=======
+                id: 4,
+                title: "Coding Instructor",
+                company: "Youth Coding Camp",
+                date: "Summer 2022",
+                description: [
+                    "Taught basic programming concepts to middle school students using Scratch and Python",
+                    "Developed curriculum for beginner coders",
+                    "Mentored students in building their first projects"
+                ],
+                images: [
+                    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                ]
+>>>>>>> a51209ab97e91e7f0da13a17d46a572a59ba3017
             }
         ]
     };
