@@ -217,8 +217,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 "NOTE: This project is published under a restrictive license, Hence live demo and source code will only be sent upon request.",
             ],
             technologies: ["C", "Make", "lldb" , "gdb", "atomics library", "valgrind", "lima virtual machine", "Linux OS"],
-            githubLink: "#contact",
-            demoLink: "#contact",
+            githubLink: "./404.html",
+            demoLink: "./404.html",
             media: [
                 {
                     type: "image",
@@ -244,8 +244,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Designed for ExFat file system only"
             ],
             technologies: ["C", "Make", "lldb" , "gdb", "atomics library", "valgrind", "lima virtual machine", "Linux"],
-            githubLink: "#contact",
-            demoLink: "#contact",
+            githubLink: "./404.html",
+            demoLink: "./404.html",
             media: [
                 {
                     type: "image",
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             technologies: ["Python", "beautifulsoup4", "openpyxl", "git" , "github"],
             githubLink: "https://github.com/Krish-Bhalala/Academic-Learning-Centre-Admin-Scripts",
-            demoLink: "#contact",
+            demoLink: "./404.html",
             media: [
                 {
                     type: "image",
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             technologies: ["Python", "OpenCV", "git" , "github"],
             githubLink: "https://github.com/Krish-Bhalala/Color-Detection",
-            demoLink: "#contact",
+            demoLink: "./404.html",
             media: [
                 {
                     type: "image",
@@ -327,8 +327,8 @@ document.addEventListener('DOMContentLoaded', function() {
             features: [
             ],
             technologies: ["C", "Makefile", "Valgring" , "lldb"],
-            githubLink: "#contact",
-            demoLink: "#contact",
+            githubLink: "./404.html",
+            demoLink: "./404.html",
             media: [
                 {
                     type: "image",
