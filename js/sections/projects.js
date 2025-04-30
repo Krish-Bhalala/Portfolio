@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Project data - easily add more projects here
     const projectsData = [
-        {
+        {//Greed Game
             id: 1,
             title: "Greed Game",
             subtitle: "Fun and retro style console game",
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
             ]
         },
-        {
+        {//UM Active Minds Official Website
             id: 2,
             title: "UM Active Minds Official Website",
             subtitle: "Active Minds chapter at University of Manitoba's official website",
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ]
         },
-        {
+        {//Hashtag Nasa
             id: 3,
             title: "Hashtag Nasa",
             subtitle: "Solar Flare 2024 visualization - NASA Space App Challenge 2024",
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         
         //Next row
-        {
+        {//Potato Clicker Game – Perry the Platypus Edition!
             id: 4,
             title: "Potato Clicker Game – Perry the Platypus Edition!",
             subtitle: "A Fun Mini browser based clicker game",
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ]
         },
-        {
+        {//San Francisco’s Cycling Connections Analytics
             id: 5,
             title: "San Francisco’s Cycling Connections Analytics",
             subtitle: "A Data Analytics project on San Francisco’s Cycling Connections",
@@ -171,8 +171,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ]
         },
-        {
+        {//Fourier Drawing Machine
             id: 6,
+            title: "Fourier Drawing Machine",
+            subtitle: "A interactive drawing machine that runs on math",
+            description: "The project aims create a drawing machine that can generate epicycles with fourier series and draw any image using them.",
+            features: [
+                "Uses Fourier series to decompose complex shapes",
+                "User-friendly drawing interface.",
+                "Real-time conversion of drawings into Fourier series.",
+                "Visualization of epicycles used in the Fourier reconstruction"
+            ],
+            technologies: ["p5.js", "Javascript", "HTML", "CSS" , "github", "git"],
+            githubLink: "https://github.com/Krish-Bhalala/Fourier-Drawing-Board",
+            demoLink: "https://krish-bhalala.github.io/Fourier-Drawing-Board/",
+            media: [
+                {
+                    type: "image",
+                    url: "./images/drawingboard1.png",
+                    alt: "Scripting logo"
+                },
+                {
+                    type: "image",
+                    url: "./images/drawingboard2.png",
+                    alt: "Scripting logo"
+                },
+                {
+                    type: "image",
+                    url: "./images/drawingboard3.png",
+                    alt: "Scripting logo"
+                }
+            ]
+        },
+        {//Cooperative Threads Library
+            id: 7,
             title: "Cooperative Threads Library",
             subtitle: "A multithreading library for single core cooperative systems",
             description: "The project aims to recreate the popular pthreads library in C that can fully support concurrency with and without mutexes.",
@@ -184,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "With good design patterns and proper documentation",
                 "NOTE: This project is published under a restrictive license, Hence live demo and source code will only be sent upon request.",
             ],
-            technologies: ["C", "Make", "lldb" , "gdb", "atomics library", "valgring", "lima virtual machine", "Linux OS"],
+            technologies: ["C", "Make", "lldb" , "gdb", "atomics library", "valgrind", "lima virtual machine", "Linux OS"],
             githubLink: "#contact",
             demoLink: "#contact",
             media: [
@@ -200,7 +232,111 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ]
         },
-        
+        {//ExFAT shell
+            id: 8,
+            title: "ExFAT shell",
+            subtitle: "A custom shell for ExFAT file system",
+            description: "The project aims to create a rudimentary shell in C that can fully support basic UNIX operations and ability to run executables .",
+            features: [
+                "Supports operations like cd,pwd,ls,redirection and piping",
+                "Launches secure independent processes for running executables from mounted file system",
+                "Supports POSIX like error codes and shell features",
+                "Designed for ExFat file system only"
+            ],
+            technologies: ["C", "Make", "lldb" , "gdb", "atomics library", "valgrind", "lima virtual machine", "Linux"],
+            githubLink: "#contact",
+            demoLink: "#contact",
+            media: [
+                {
+                    type: "image",
+                    url: "./images/shell.png",
+                    alt: "shell logo"
+                }
+            ]
+        },
+        {//Cancer Classifier
+            id: 9,
+            title: "Breast Cancer Classifier",
+            subtitle: "A neural network trained on breast cancer data to detect cancerous cells",
+            description: "The project aims to develop a model to classify breast tumors as malignant or benign.",
+            features: [
+                "569 samples of breast masses",
+                "30 features describing each tumor's characteristics",
+                "Binary classification: malignant or benign"
+            ],
+            technologies: ["R", "Jupyter Notebook", "git" , "github", "neuralnet lib"],
+            githubLink: "https://github.com/Krish-Bhalala/breast-cancer-classifier",
+            demoLink: "https://krish-bhalala.github.io/breast-cancer-classifier/",
+            media: [
+                {
+                    type: "image",
+                    url: "./images/classifier.jpg",
+                    alt: "Classifier Image"
+                },
+                {
+                    type: "image",
+                    url: "./images/CancerClassifier.jpeg",
+                    alt: "Classifier Image"
+                }
+            ]
+        },
+        {//ALC admin scripts
+            id: 10,
+            title: "Payroll Admin Scripts",
+            subtitle: "A python script to automate timesheet generation for tutors at ALC",
+            description: "The project aims create a python script that fetches tutor's data and create timesheet in MSExcel and email it to admin office weekly.",
+            features: [
+                "Scrapes tutoring session data from the tutoring scheduling platform.",
+                "Generate a detail timesheet report using a template with all the info about tutor and tutee sessions in Excel.",
+                "Periodically emails the timesheet to the admins."
+            ],
+            technologies: ["Python", "beautifulsoup4", "openpyxl", "git" , "github"],
+            githubLink: "https://github.com/Krish-Bhalala/Academic-Learning-Centre-Admin-Scripts",
+            demoLink: "#contact",
+            media: [
+                {
+                    type: "image",
+                    url: "./images/scripting.jpg",
+                    alt: "Scripting logo"
+                }
+            ]
+        },
+        {//colordetection
+            id: 11,
+            title: "Colored Object Detection",
+            subtitle: "A object detection model that detects extreme BGR values",
+            description: "The project aims create a python script that can detect objects based on their colors using openCV.",
+            features: [
+            ],
+            technologies: ["Python", "OpenCV", "git" , "github"],
+            githubLink: "https://github.com/Krish-Bhalala/Color-Detection",
+            demoLink: "#contact",
+            media: [
+                {
+                    type: "image",
+                    url: "./images/colordetection.jpeg",
+                    alt: "Classifier Image"
+                }
+            ]
+        },
+        {//colordetection
+            id: 12,
+            title: "Garbage Collector",
+            subtitle: "A rudimentary memory manager in C",
+            description: "The project aims implement garbage collection in C using the famous mark and sweep algorithm.",
+            features: [
+            ],
+            technologies: ["C", "Makefile", "Valgring" , "lldb"],
+            githubLink: "#contact",
+            demoLink: "#contact",
+            media: [
+                {
+                    type: "image",
+                    url: "./images/garbage.jpeg",
+                    alt: "mark and sweep algorithm"
+                }
+            ]
+        }
     ];
 
     // Initialize projects grid

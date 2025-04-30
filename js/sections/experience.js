@@ -3,10 +3,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const experienceData = {
         work: [
             {
+                id: 0,
+                title: "Grader COMP3030 Automata & Formal Languages",
+                company: "University of Manitoba",
+                date: "Jul 2025 - Aug 2025",
+                description: [
+                    "Responsible for grading assignments and providing detailed constructive feedback",
+                    "Meeting with course faculty to discuss trends in Assignments",
+                    "Assisting course faculty with assessing term tests"
+                ],
+                images: [
+                ]
+            },
+            {
                 id: 1,
                 title: "Grader COMP3430 Operating Systems",
                 company: "University of Manitoba",
-                date: "May 2025 - July 2025",
+                date: "May 2025 - Jul 2025",
                 description: [
                     "Responsible for grading assignments and providing detailed constructive feedback",
                     "Meeting with course faculty to discuss trends in Assignments and flagging for plaigiarism",
@@ -29,42 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 id: 3,
-                title: "Teaching Assistant COMP2280 - Intro to Computer Systems ",
-                company: "University of Manitoba",
-                date: "Jan 2025 - May 2025",
-                description: [
-                    "Organize weekly office hours for 310 students across 3 sections",
-                    "Providing one-on-one and group assistance to students in understanding course material and LC3 assembly programming",
-                    "Creating sample midterms and questions  for students to practice and boost their confidence",
-                    "Monitoring and solving student queries on the course discussion board of all 3 sections",
-                ],
-                images: []
-            },
-            {
-                id: 4,
-                title: "Teaching Assistant COMP1012 - Intro to Python",
-                company: "University of Manitoba",
-                date: "Jan 2025 - May 2025",
-                description: [
-                    "Conduct weekly python tutorial labs for 20 first year students",
-                    "Assist in creating and grading lab materials, while resolving any queries regarding the course content "
-                ],
-                images: []
-            },
-            {
-                id: 5,
-                title: "Supplemental Instructor COMP1012 - Intro to Python",
-                company: "Academic Learning Centre, University of Manitoba",
-                date: "Aug 2024 - Present",
-                description: [
-                    "Led engaging group study sessions to enhance study skills and promote active learning alongside faculty",
-                    "Developed tailored instructional materials to support diverse learning styles and boost comprehension",
-                    "Marketed the SI program to increase student participation and provided personalized consultations"
-                ],
-                images: []
-            },
-            {
-                id: 6,
                 title: "Content and Study Skills Tutor",
                 company: "Academic Learning Centre, University of Manitoba",
                 date: "Aug 2023 - Present",
@@ -77,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 7,
+                id: 4,
                 title: "Associate",
                 company: "Luis and Emma's Nofrills",
                 date: "Mar 2023 - Present",
@@ -88,6 +65,42 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 images: []
             },
+            {
+                id: 5,
+                title: "Teaching Assistant COMP2280 - Intro to Computer Systems ",
+                company: "University of Manitoba",
+                date: "Jan 2025 - May 2025",
+                description: [
+                    "Organize weekly office hours for 310 students across 3 sections",
+                    "Providing one-on-one and group assistance to students in understanding course material and LC3 assembly programming",
+                    "Creating sample midterms and questions  for students to practice and boost their confidence",
+                    "Monitoring and solving student queries on the course discussion board of all 3 sections",
+                ],
+                images: []
+            },
+            {
+                id: 6,
+                title: "Teaching Assistant COMP1012 - Intro to Python",
+                company: "University of Manitoba",
+                date: "Jan 2025 - May 2025",
+                description: [
+                    "Conduct weekly python tutorial labs for 20 first year students",
+                    "Assist in creating and grading lab materials, while resolving any queries regarding the course content "
+                ],
+                images: []
+            },
+            {
+                id: 7,
+                title: "Supplemental Instructor COMP1012 - Intro to Python",
+                company: "Academic Learning Centre, University of Manitoba",
+                date: "Aug 2024 - Present",
+                description: [
+                    "Led engaging group study sessions to enhance study skills and promote active learning alongside faculty",
+                    "Developed tailored instructional materials to support diverse learning styles and boost comprehension",
+                    "Marketed the SI program to increase student participation and provided personalized consultations"
+                ],
+                images: []
+            }
         ],
         leadership: [
             {
@@ -142,6 +155,19 @@ document.addEventListener('DOMContentLoaded', function() {
         volunteer: [
             {
                 id: 12,
+                title: "Research Assistant",
+                company: "University of Manitoba",
+                date: "May 2025 - Present",
+                description: [
+                    "Implement the ORCA bionic arm from scratch, including assembly and modelling",
+                    "Reading research papers regarding training robots in simulation and real life",
+                    "Collaborating with other researchers in SPINS Lab to test the bionic arm",
+                    "Working under the supervision of Dr. Chengzhou Tang"
+                ],
+                images: ["./images/RA1.png", "./images/RA2.png", "./images/RA3.png"]
+            },
+            {
+                id: 13,
                 title: "Highschool Workshop Facilitator",
                 company: "Let's Talk Science",
                 date: "Jul 2022 - May 2024",
@@ -156,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 13,
+                id: 14,
                 title: "Student Volunteer (Various Roles)",
                 company: "Science Rendezvous",
                 date: "Summer 2022, Summer 2023, Summer 2024",
@@ -169,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 14,
+                id: 15,
                 title: "Tax clinic volunteer",
                 company: "CRA - UMSU Tax Clinic",
                 date: "Winter 2023",
@@ -181,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 14,
+                id: 16,
                 title: "Tutor and Mentor",
                 company: "Science Student Association",
                 date: "Aug 2022 - Present",
