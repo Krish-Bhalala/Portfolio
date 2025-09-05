@@ -154,19 +154,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         volunteer: [
             {
-                id: 12,
-                title: "Research Assistant",
-                company: "University of Manitoba",
-                date: "May 2025 - Present",
-                description: [
-                    "Implement the ORCA bionic arm from scratch, including assembly and modelling",
-                    "Reading research papers regarding training robots in simulation and real life",
-                    "Collaborating with other researchers in SPINS Lab to test the bionic arm",
-                    "Working under the supervision of Dr. Chengzhou Tang"
-                ],
-                images: ["./images/RA1.png", "./images/RA2.png", "./images/RA3.png"]
-            },
-            {
                 id: 13,
                 title: "Highschool Workshop Facilitator",
                 company: "Let's Talk Science",
