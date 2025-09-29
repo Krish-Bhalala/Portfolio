@@ -83,7 +83,40 @@ section {
     border-radius: 2px;
 }
 
-/* Responsive Design */
+/* Skills Section */
+/* .hexagon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.skill-name {
+  visibility: hidden;
+  width: max-content;
+  background-color: #ff0000;
+  color: #fcf400;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.hexagon:hover .skill-name {
+  visibility: visible;
+  opacity: 1;
+} */
+
+
+/* Responsivity */
 @media (max-width: 992px) {
     .about-content {
         flex-direction: column;
@@ -96,6 +129,11 @@ section {
     .hero-image {
         width: 50%;
         height: 60%;
+        visibility: hidden;
+    }
+
+    .hero-image img {
+        opacity: 0.6;
     }
 }
 
@@ -120,6 +158,10 @@ section {
         right: auto;
         transform: none;
         margin: 0 auto;
+    }
+
+    .hero-image img {
+        opacity: 0.4;
     }
 
     .btn-outline {

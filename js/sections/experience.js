@@ -3,45 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const experienceData = {
         work: [
             {
-                id: 0,
-                title: "Grader COMP3030 Automata & Formal Languages",
-                company: "University of Manitoba",
-                date: "Jul 2025 - Aug 2025",
-                description: [
-                    "Responsible for grading assignments and providing detailed constructive feedback",
-                    "Meeting with course faculty to discuss trends in Assignments",
-                    "Assisting course faculty with assessing term tests"
-                ],
-                images: [
-                ]
-            },
-            {
-                id: 1,
-                title: "Grader COMP3430 Operating Systems",
-                company: "University of Manitoba",
-                date: "May 2025 - Jul 2025",
-                description: [
-                    "Responsible for grading assignments and providing detailed constructive feedback",
-                    "Meeting with course faculty to discuss trends in Assignments and flagging for plaigiarism",
-                    "Assisting course faculty with assessing term tests"
-                ],
-                images: [
-                ]
-            },
-            {
-                id: 2,
-                title: "Comp Help Centre Leader 1",
-                company: "University of Manitoba",
-                date: "May 2025 - Aug 2025",
-                description: [
-                    "Assist students with conceptual and technical issues in computer science and engineering courses",
-                    "Hosting group study sessions and workshops for first year and second year computer science courses",
-                    "Currently tutoring: COMP1010, COMP1012, COMP1020, COMP2140, COMP2160, COMP2280, COMP2080, COMP3430, COMP3030, COMP2150"
-                ],
-                images: []
-            },
-            {
-                id: 3,
+                id: 101,
                 title: "Content and Study Skills Tutor",
                 company: "Academic Learning Centre, University of Manitoba",
                 date: "Aug 2023 - Present",
@@ -54,7 +16,57 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 4,
+                id: 102,
+                title: "Supplemental Instructor MATH1240 - Discrete Mathematics",
+                company: "Academic Learning Centre, University of Manitoba",
+                date: "Aug 2024 - Present",
+                description: [
+                    "Led engaging group study sessions to enhance study skills and promote active learning alongside faculty",
+                    "Developed tailored instructional materials to support diverse learning styles and boost comprehension",
+                    "Marketed the SI program to increase student participation and provided personalized consultations"
+                ],
+                images: []
+            },
+            {
+                id: 103,
+                title: "Grader COMP3030 Automata & Formal Languages",
+                company: "University of Manitoba",
+                date: "Jul 2025 - Aug 2025",
+                description: [
+                    "Responsible for grading assignments and providing detailed constructive feedback",
+                    "Meeting with course faculty to discuss trends in Assignments",
+                    "Assisting course faculty with assessing term tests"
+                ],
+                images: [
+                ]
+            },
+            {
+                id: 104,
+                title: "Grader COMP3430 Operating Systems",
+                company: "University of Manitoba",
+                date: "May 2025 - Jul 2025",
+                description: [
+                    "Responsible for grading assignments and providing detailed constructive feedback",
+                    "Meeting with course faculty to discuss trends in Assignments and flagging for plaigiarism",
+                    "Assisting course faculty with assessing term tests"
+                ],
+                images: [
+                ]
+            },
+            {
+                id: 105,
+                title: "Comp Help Centre Leader 1",
+                company: "University of Manitoba",
+                date: "May 2025 -  Present",
+                description: [
+                    "Assist students with conceptual and technical issues in computer science and engineering courses",
+                    "Hosting group study sessions and workshops for first year and second year computer science courses",
+                    "Currently tutoring: COMP1010, COMP1012, COMP1020, COMP2140, COMP2160, COMP2280, COMP2080, COMP3430, COMP3030, COMP2150"
+                ],
+                images: []
+            },
+            {
+                id: 106,
                 title: "Associate",
                 company: "Luis and Emma's Nofrills",
                 date: "Mar 2023 - Present",
@@ -66,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 5,
+                id: 107,
                 title: "Teaching Assistant COMP2280 - Intro to Computer Systems ",
                 company: "University of Manitoba",
                 date: "Jan 2025 - May 2025",
@@ -79,10 +91,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 6,
+                id: 108,
                 title: "Teaching Assistant COMP1012 - Intro to Python",
                 company: "University of Manitoba",
-                date: "Jan 2025 - May 2025",
+                date: "Jan 2025 - Present",
                 description: [
                     "Conduct weekly python tutorial labs for 20 first year students",
                     "Assist in creating and grading lab materials, while resolving any queries regarding the course content "
@@ -90,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 7,
+                id: 109,
                 title: "Supplemental Instructor COMP1012 - Intro to Python",
                 company: "Academic Learning Centre, University of Manitoba",
                 date: "Aug 2024 - Present",
@@ -104,31 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         leadership: [
             {
-                id: 8,
-                title: "Vice President - Membership Experience",
-                company: "International Community Centre",
-                date: "June 2024 - Present",
-                description: [
-                    "Launched the Community Builder Program, significantly enhancing international student involvement on campus",
-                    "Led 122 volunteers team, streamlining onboarding and tracking hours to ensure operational efficiency.",
-                    "Cultivated community through team-building activities and scholarships, while forging partnerships to expand resources for international students."
-                ],
-                images: []
-            },
-            {
-                id: 9,
-                title: "Web Developer Executive",
-                company: "Active Minds Umanitoba",
-                date: "Jan 2024 - Present",
-                description: [
-                    "Collaborated with a team of 3 student developers in redesigning the official student club website",
-                    "Migrated the website form WordPress to a fully responsive static HTML,CSS, JavaScript site and Parcel",
-                    "Maintaining web presence of the club and conducting thorough market research for user sentiment"
-                ],
-                images: []
-            },
-            {
-                id: 10,
+                id: 201,
                 title: "Computer Vision Lead",
                 company: "Umanitoba Agricultural Robotics Team",
                 date: "Sept 2024 - Present",
@@ -140,8 +128,32 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 11,
-                title: "International Student Advocacy Councillor",
+                id: 202,
+                title: "Web Developer Executive",
+                company: "Active Minds Umanitoba",
+                date: "Jan 2024 - Present",
+                description: [
+                    "Collaborated with a team of 3 student developers in redesigning the official student club website",
+                    "Migrated the website form WordPress to a fully responsive static HTML,CSS, JavaScript site and Parcel",
+                    "Maintaining web presence of the club and conducting thorough market research for user sentiment"
+                ],
+                images: []
+            },
+            {
+                id: 203,
+                title: "Vice President - Membership Experience",
+                company: "International Community Centre",
+                date: "June 2024 - May 2025",
+                description: [
+                    "Launched the Community Builder Program, significantly enhancing international student involvement on campus",
+                    "Led 122 volunteers team, streamlining onboarding and tracking hours to ensure operational efficiency.",
+                    "Cultivated community through team-building activities and scholarships, while forging partnerships to expand resources for international students."
+                ],
+                images: []
+            },
+            {
+                id: 204,
+                title: "International Student Advocacy",
                 company: "Computer Science Student Association ",
                 date: "Jan 2024 – May 2024",
                 description: [
@@ -154,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         volunteer: [
             {
-                id: 12,
+                id: 301,
                 title: "Research Assistant",
                 company: "University of Manitoba",
                 date: "May 2025 - Present",
@@ -167,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: ["./images/RA1.png", "./images/RA2.png", "./images/RA3.png"]
             },
             {
-                id: 13,
+                id: 302,
                 title: "Highschool Workshop Facilitator",
                 company: "Let's Talk Science",
                 date: "Jul 2022 - May 2024",
@@ -182,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 14,
+                id: 303,
                 title: "Student Volunteer (Various Roles)",
                 company: "Science Rendezvous",
                 date: "Summer 2022, Summer 2023, Summer 2024",
@@ -195,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 15,
+                id: 304,
                 title: "Tax clinic volunteer",
                 company: "CRA - UMSU Tax Clinic",
                 date: "Winter 2023",
@@ -207,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 images: []
             },
             {
-                id: 16,
+                id: 305,
                 title: "Tutor and Mentor",
                 company: "Science Student Association",
                 date: "Aug 2022 - Present",
