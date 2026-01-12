@@ -1,132 +1,142 @@
 .btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: var(--primary);
-    color: white;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid var(--primary);
-    position: relative;
-    overflow: hidden;
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary);
+  position: relative;
+  overflow: hidden;
 }
 
 .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
 }
 
 .btn:hover::before {
-    left: 100%;
+  left: 100%;
 }
 
 .btn:hover {
-    background-color: transparent;
-    color: var(--primary);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+  background-color: transparent;
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
 }
 
 .btn-outline {
-    background-color: transparent;
-    color: var(--primary);
-    margin-left: 15px;
+  background-color: transparent;
+  color: var(--primary);
+  margin-left: 15px;
 }
 
 .btn-outline:hover {
-    background-color: var(--primary);
-    color: white;
+  background-color: var(--primary);
+  color: white;
 }
 
 .tab-btn {
-    padding: 10px 25px;
-    background-color: transparent;
-    border: none;
-    border-radius: 50px;
-    font-weight: 600;
-    cursor: none;
-    transition: all 0.3s ease;
-    color: var(--text-light);
-    position: relative;
-    overflow: hidden;
+  padding: 10px 25px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: none;
+  transition: all 0.3s ease;
+  color: var(--text-light);
+  position: relative;
+  overflow: hidden;
 }
 
 .tab-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, transparent, rgba(67, 97, 238, 0.1), transparent);
-    transform: translateX(-100%);
-    transition: transform 0.5s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(67, 97, 238, 0.1),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
 }
 
 .tab-btn:hover::before {
-    transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .tab-btn.active {
-    background-color: var(--primary);
-    color: white;
+  background-color: var(--primary);
+  color: white;
 }
 
 .submit-btn {
-    background-color: var(--primary);
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 50px;
-    cursor: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  cursor: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .submit-btn::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 5px;
-    height: 5px;
-    background: rgba(255, 255, 255, 0.5);
-    opacity: 0;
-    border-radius: 100%;
-    transform: scale(1, 1) translate(-50%);
-    transform-origin: 50% 50%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
 }
 
 .submit-btn:focus:not(:active)::after {
-    animation: ripple 1s ease-out;
+  animation: ripple 1s ease-out;
 }
 
 @keyframes ripple {
-    0% {
-        transform: scale(0, 0);
-        opacity: 1;
-    }
-    20% {
-        transform: scale(25, 25);
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: scale(40, 40);
-    }
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
 }
 
 .submit-btn:hover {
-    background-color: var(--secondary);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+  background-color: var(--secondary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
 }

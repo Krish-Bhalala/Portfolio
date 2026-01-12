@@ -1,101 +1,113 @@
 /* ===== NEON LIGHT WALL ===== */
 .neon-wall {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0;
 }
 
 .neon-icon {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    text-decoration: none;
-    color: rgba(255,255,255,0.7);
-    font-size: 1.8rem;
-    transition: all 0.3s ease;
-    z-index: 1;
-    overflow: hidden;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
 }
 
 /* Neon Tube Border */
 .neon-tube {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 2px solid;
-    opacity: 0.5;
-    transition: all 0.3s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid;
+  opacity: 0.5;
+  transition: all 0.3s ease;
 }
 
 /* Neon Glow Effect */
 .neon-glow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px, 0 0 20px;
-    opacity: 0;
-    transition: all 0.3s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow:
+    0 0 10px,
+    0 0 20px;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 /* Text Label */
 .neon-text {
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.9rem;
-    color: white;
-    opacity: 0;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-    text-shadow: 0 0 5px currentColor;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: white;
+  opacity: 0;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-shadow: 0 0 5px currentColor;
 }
 
 /* Hover Effects */
 .neon-icon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .neon-icon:hover .neon-tube {
-    opacity: 1;
-    animation: flicker 0.5s infinite alternate;
+  opacity: 1;
+  animation: flicker 0.5s infinite alternate;
 }
 
 .neon-icon:hover .neon-glow {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .neon-icon:hover .neon-text {
-    opacity: 1;
-    bottom: -30px;
+  opacity: 1;
+  bottom: -30px;
 }
 
 /* Flicker Animation */
 @keyframes flicker {
-    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        opacity: 1;
-    }
-    20%, 22%, 24%, 55% {
-        opacity: 0.6;
-    }
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  22%,
+  24%,
+  55% {
+    opacity: 0.6;
+  }
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .neon-wall {
-        gap: 20px;
-    }
-    .neon-icon {
-        width: 70px;
-        height: 70px;
-        font-size: 1.5rem;
-    }
+  .neon-wall {
+    gap: 20px;
+  }
+  .neon-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
 }

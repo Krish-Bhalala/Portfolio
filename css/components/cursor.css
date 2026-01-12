@@ -1,90 +1,88 @@
 /* 🔥 FIREBALL CURSOR (INSTANT MOVEMENT) */
 .fireball-cursor {
-    position: fixed;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: radial-gradient(
-      circle, 
-      rgba(255, 100, 0, 0.9) 0%, 
-      rgba(255, 50, 0, 0.8) 50%, 
-      rgba(255, 0, 0, 0.6) 100%
-    );
-    pointer-events: none;
-    z-index: 10000;
-    transform: translate(-50%, -50%);
-    will-change: transform;
-    filter: drop-shadow(0 0 15px rgba(255, 80, 0, 0.7));
-    mix-blend-mode: screen;
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 100, 0, 0.9) 0%,
+    rgba(255, 50, 0, 0.8) 50%,
+    rgba(255, 0, 0, 0.6) 100%
+  );
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  filter: drop-shadow(0 0 15px rgba(255, 80, 0, 0.7));
+  mix-blend-mode: screen;
 }
 
 /* 🔥 BINARY TRAIL (RANDOM DIRECTION) */
 .binary-trail {
-    position: fixed;
-    color: rgba(255, 200, 0, 0.9);
-    font-family: 'Courier New', monospace;
-    font-weight: bold;
-    font-size: 14px;
-    pointer-events: none;
-    z-index: 9999;
-    will-change: transform, opacity;
-    text-shadow: 0 0 8px rgba(255, 150, 0, 0.8);
-    animation: binary-float 1.2s ease-out forwards;
+  position: fixed;
+  color: rgba(255, 200, 0, 0.9);
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform, opacity;
+  text-shadow: 0 0 8px rgba(255, 150, 0, 0.8);
+  animation: binary-float 1.2s ease-out forwards;
 }
 
 @keyframes binary-float {
-    0% {
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 1;
-    }
-    100% {
-      transform: 
-        translate(
-          calc(-50% + (var(--tx) * 100px)),
-          calc(-50% + (var(--ty) * 100px))
-        ) 
-        scale(0.2);
-      opacity: 0;
-    }
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(
+        calc(-50% + (var(--tx) * 100px)),
+        calc(-50% + (var(--ty) * 100px))
+      )
+      scale(0.2);
+    opacity: 0;
+  }
 }
 
 /* 💥 CLICK EXPLOSION (BINARY BURST) */
 .binary-explosion {
-    position: fixed;
-    color: rgba(255, 255, 255, 0.9);
-    font-family: 'Courier New', monospace;
-    font-weight: bold;
-    font-size: 16px;
-    pointer-events: none;
-    z-index: 10001;
-    will-change: transform, opacity;
-    text-shadow: 0 0 10px rgba(255, 100, 0, 0.8);
-    animation: binary-explode 0.8s ease-out forwards;
+  position: fixed;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  font-size: 16px;
+  pointer-events: none;
+  z-index: 10001;
+  will-change: transform, opacity;
+  text-shadow: 0 0 10px rgba(255, 100, 0, 0.8);
+  animation: binary-explode 0.8s ease-out forwards;
 }
 
 @keyframes binary-explode {
-    0% {
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 1;
-    }
-    100% {
-      transform: 
-        translate(
-          calc(-50% + (var(--tx) * 150px)),
-          calc(-50% + (var(--ty) * 150px))
-        ) 
-        scale(0);
-      opacity: 0;
-    }
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(
+        calc(-50% + (var(--tx) * 150px)),
+        calc(-50% + (var(--ty) * 150px))
+      )
+      scale(0);
+    opacity: 0;
+  }
 }
 
 /* 🎨 HOVER EFFECT (PURPLE GLOW) */
 .fireball-cursor.hover {
-    background: radial-gradient(
-      circle, 
-      rgba(180, 23, 158, 0.9) 0%, 
-      rgba(111, 0, 255, 0.8) 50%, 
-      rgba(67, 97, 238, 0.6) 100%
-    );
-    filter: drop-shadow(0 0 20px rgba(180, 23, 158, 0.8));
+  background: radial-gradient(
+    circle,
+    rgba(180, 23, 158, 0.9) 0%,
+    rgba(111, 0, 255, 0.8) 50%,
+    rgba(67, 97, 238, 0.6) 100%
+  );
+  filter: drop-shadow(0 0 20px rgba(180, 23, 158, 0.8));
 }
