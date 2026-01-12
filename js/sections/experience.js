@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Experience data with images
     const experienceData = {
         work: [
@@ -165,19 +165,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         ],
         volunteer: [
-            {
-                id: 301,
-                title: "Research Assistant",
-                company: "University of Manitoba",
-                date: "May 2025 - Present",
-                description: [
-                    "Implement the ORCA bionic arm from scratch, including assembly and modelling",
-                    "Reading research papers regarding training robots in simulation and real life",
-                    "Collaborating with other researchers in SPINS Lab to test the bionic arm",
-                    "Working under the supervision of Dr. Chengzhou Tang"
-                ],
-                images: ["./images/RA1.png", "./images/RA2.png", "./images/RA3.png"]
-            },
+            // {
+            //     id: 301,
+            //     title: "Research Assistant",
+            //     company: "University of Manitoba",
+            //     date: "May 2025 - Present",
+            //     description: [
+            //         "Implement the ORCA bionic arm from scratch, including assembly and modelling",
+            //         "Reading research papers regarding training robots in simulation and real life",
+            //         "Collaborating with other researchers in SPINS Lab to test the bionic arm",
+            //         "Working under the supervision of Dr. Chengzhou Tang"
+            //     ],
+            //     images: ["./images/RA1.png", "./images/RA2.png", "./images/RA3.png"]
+            // },
             {
                 id: 302,
                 title: "Highschool Workshop Facilitator",
@@ -237,19 +237,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize experience tabs
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
-    
+
     // Create experience cards
     function renderExperience(tab) {
         const tabContent = document.getElementById(tab);
-        
+
         // Clear existing content first
         tabContent.innerHTML = '';
-        
+
         experienceData[tab].forEach(exp => {
             const expCard = document.createElement('div');
             expCard.className = 'experience-card';
             expCard.setAttribute('data-exp-id', exp.id);
-            
+
             // Build gallery HTML if images exist
             let galleryHTML = '';
             if (exp.images && exp.images.length > 0) {
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 `;
             }
-            
+
             expCard.innerHTML = `
                 <div class="experience-header">
                     <div>
@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             tabContent.appendChild(expCard);
         });
-        
+
         // Initialize interactions for this tab's content
         initTabInteractions(tabContent);
     }
@@ -290,21 +290,21 @@ document.addEventListener('DOMContentLoaded', function() {
     function initTabInteractions(tabContent) {
         // Add click event to headers for expand/collapse
         tabContent.querySelectorAll('.experience-header').forEach(header => {
-            header.addEventListener('click', function() {
+            header.addEventListener('click', function () {
                 const card = this.parentElement;
                 const description = this.nextElementSibling;
                 const icon = this.querySelector('.toggle-icon');
-                
+
                 description.classList.toggle('active');
                 icon.classList.toggle('active');
-                
+
                 // Smooth scroll to keep the expanded content in view
                 if (description.classList.contains('active')) {
                     card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 }
             });
         });
-        
+
         // Initialize image gallery functionality for this tab
         initImageGallery(tabContent);
     }
@@ -321,25 +321,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 <img class="exp-modal-content" src="" alt="">
             `;
             document.body.appendChild(modal);
-            
+
             // Set up modal close events (only once)
             modal.querySelector('.exp-modal-close').addEventListener('click', () => {
                 modal.classList.remove('active');
             });
-            
-            modal.addEventListener('click', function(e) {
+
+            modal.addEventListener('click', function (e) {
                 if (e.target === modal) {
                     modal.classList.remove('active');
                 }
             });
         }
-        
+
         // Add click events to gallery items in this tab
         tabContent.querySelectorAll('.exp-gallery-item').forEach(item => {
-            item.addEventListener('click', function() {
+            item.addEventListener('click', function () {
                 const imgSrc = this.querySelector('img').src;
                 const modalImg = modal.querySelector('.exp-modal-content');
-                
+
                 modal.classList.add('active');
                 modalImg.src = imgSrc;
             });
@@ -362,26 +362,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize all tabs
     initializeAllTabs();
-    
+
     // Tab switching
     tabBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             const tabId = this.getAttribute('data-tab');
-            
+
             // Update active tab buttons
             tabBtns.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
-            
+
             // Hide all tab contents first
             tabContents.forEach(content => {
                 content.style.display = 'none';
                 content.classList.remove('active');
             });
-            
+
             // Show the selected tab content
             const activeTab = document.getElementById(tabId);
             activeTab.style.display = 'block';
-            
+
             // Use setTimeout to ensure display:block is applied before adding active class
             setTimeout(() => {
                 activeTab.classList.add('active');
